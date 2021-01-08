@@ -46,7 +46,7 @@ ls ./data
  data.xml.dvc
 dvc pull
 ls data/
-
+```
 - data revert
 ```
 cp data/data.xml /tmp/data.xml
