@@ -61,9 +61,9 @@ git push
 dvc push
 git log --oneline
 ```
+-- two data.xml version exist
+-- checkout previous version
 ```
-# two data.xml version exist
-# checkout previous version
 git checkout HEAD^1 data/data.xml.dvc
 dvc checkout
 ls -lh data
@@ -84,7 +84,7 @@ dvc list https://github.com/iterative/dataset-registry get-started
 dvc get https://github.com/iterative/dataset-registry use-cases/cats-dogs
 ```
 ```
-# dvc import == dvc get + dvc add
+<> dvc import == dvc get + dvc add
 dvc import https://github.com/iterative/dataset-registry \
              get-started/data.xml -o data/data.xml
 dvc update data/data.xml.dvc
