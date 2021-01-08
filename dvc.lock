@@ -53,3 +53,23 @@ train:
   - path: model.pkl
     md5: dfce1d91ce71265da13ecfb5642254c4
     size: 2664521
+evaluate:
+  cmd: python3 src/evaluate.py model.pkl data/features scores.json prc.json
+  deps:
+  - path: data/features
+    md5: 47b33379728893c2aed0a5a459c1cf2f.dir
+    size: 7083899
+    nfiles: 2
+  - path: model.pkl
+    md5: dfce1d91ce71265da13ecfb5642254c4
+    size: 2664521
+  - path: src/evaluate.py
+    md5: 631fd3f13434edcf4abd56a5b798e8b2
+    size: 1091
+  outs:
+  - path: prc.json
+    md5: cd433c034acfa2ebd5679a3838b65c7c
+    size: 2415
+  - path: scores.json
+    md5: 06df1f4765480cd62052eab00517a8d2
+    size: 27
