@@ -29,10 +29,11 @@ git add data/.gitignore data/data.xml.dvc
 git commit -m "Add raw data"
 ```
 -- https://drive.google.com/drive/folders/1nt2EUfiDMJeLTneZAFy373zuVEU20y0J
+```
 dvc remote add -d storage gdrive://1nt2EUfiDMJeLTneZAFy373zuVEU20y0J
 git commit .dvc/config -m "Configure remote storage"
 dvc push
---Authentication with link
+-- Authentication with link
 git push
 ```
 ```
