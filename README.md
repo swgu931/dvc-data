@@ -1,7 +1,7 @@
-# how to use DVC (Data Version Control)
+# How to use DVC (Data Version Control)
 - ref: http://dvc.org/doc
 
-## install
+## Install
 ```
 pip3 install dvc
 pip3 install dvc[ssh]  # for local private as storage
