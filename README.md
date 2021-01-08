@@ -148,7 +148,7 @@ dvc repro
 git add dvc.lock
 dvc dag
 ```
-==============================================
+------------------------------------------
 4) Experiments
 - ref: https://dvc.org/doc/start/experiments
 ```
@@ -164,7 +164,7 @@ git add scores.json prc.json
 git commit -a -m "Create evaluation stage"
 ```
 
-## change featurize as below and dvc repro for tunning more
+### change featurize as below and dvc repro for tunning more
 - max_features: 500
 - ngrams: 2
 ```
