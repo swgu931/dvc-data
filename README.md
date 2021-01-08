@@ -28,11 +28,11 @@ dvc add data/data.xml
 git add data/.gitignore data/data.xml.dvc
 git commit -m "Add raw data"
 ```
-# https://drive.google.com/drive/folders/1nt2EUfiDMJeLTneZAFy373zuVEU20y0J
+-- https://drive.google.com/drive/folders/1nt2EUfiDMJeLTneZAFy373zuVEU20y0J
 dvc remote add -d storage gdrive://1nt2EUfiDMJeLTneZAFy373zuVEU20y0J
 git commit .dvc/config -m "Configure remote storage"
 dvc push
-  # Authentication with link
+--Authentication with link
 git push
 ```
 ```
@@ -45,7 +45,7 @@ ls ./data
  data.xml.dvc
 dvc pull
 ls data/
-------------------------------------------
+
 - data revert
 ```
 cp data/data.xml /tmp/data.xml
@@ -69,11 +69,11 @@ ls -lh data
 
 git commit data/data.xml.dvc -m "Revert dataset updates"
 ```
------------------------------------------------------------------------
+------------------------------------------------------------
 
-ref: git remote add origin git@github.com:elleobrien/dvc_basics.git
+- ref: git remote add origin git@github.com:elleobrien/dvc_basics.git
 
-===============================================
+------------------------------------------------------------
 2) Data Access
 - ref: https://dvc.org/doc/start/data-access
 ```
@@ -100,7 +100,7 @@ with dvc.api.open(
   # fd.read()
 ```
 
-===============================================
+------------------------------------------------------------
 3) Data Pipelines
 - ref: https://dvc.org/doc/start/data-pipelines
 ```
